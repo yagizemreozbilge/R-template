@@ -2,7 +2,7 @@ Package: template
 Title: Generic template for data analysis projects structured as R packages
 Version: 0.5.3
 Authors@R: c(
-    person("Francisco", "Rodriguez-Sanchez", , "f.rodriguez.sanc@gmail.com", role = c("aut", "cre"), 
+    person("Yagiz Emre", "OZBILGE", , "yemre.ozbilge@gmail.com", role = c("aut", "cre"), 
       comment = c(ORCID = "0000-0002-7981-1599"))
     )
 Description: This package works as a template for new research or data analysis
@@ -13,8 +13,8 @@ Depends:
     R (>= 3.0.0)
 License: CC0
 LazyData: true
-URL: https://github.com/Pakillo/template
-BugReports: https://github.com/Pakillo/template/issues
+URL: https://github.com/yagizemreozbilge/R-template
+BugReports: https://github.com/yagizemreozbilge/R-template.git/issues
 Imports:
     usethis,
     rstudioapi
