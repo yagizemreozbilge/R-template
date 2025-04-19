@@ -2,6 +2,7 @@
 % Please edit documentation in R/template-package.R
 \docType{package}
 \name{template-package}
+\alias{template}
 \alias{template-package}
 \title{template package}
 \description{
@@ -11,9 +12,17 @@ under the idea of having everything (data, R scripts, functions and manuscripts)
 contained in the same package to promote reproducibility.
 }
 \details{
-For detailed steps on how to use the package see \url{https://github.com/yagizemreozbilge/R-template.git}.
+For detailed steps on how to use the package see \url{https://github.com/Pakillo/template/blob/master/README.md}.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/Pakillo/template}
+  \item Report bugs at \url{https://github.com/Pakillo/template/issues}
+}
+
 }
 \author{
-Yagiz Emre OZBILGE
+Francisco Rodriguez-Sanchez
 }
 \keyword{package}
