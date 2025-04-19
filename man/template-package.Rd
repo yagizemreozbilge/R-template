@@ -11,9 +11,9 @@ under the idea of having everything (data, R scripts, functions and manuscripts)
 contained in the same package to promote reproducibility.
 }
 \details{
-For detailed steps on how to use the package see \url{https://github.com/Pakillo/template/blob/master/README.md}.
+For detailed steps on how to use the package see \url{https://github.com/yagizemreozbilge/R-template.git}.
 }
 \author{
-Francisco Rodriguez-Sanchez
+Yagiz Emre OZBILGE
 }
 \keyword{package}

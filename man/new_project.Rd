@@ -2,7 +2,11 @@
 % Please edit documentation in R/new_project.R
 \name{new_project}
 \alias{new_project}
-\title{Create new project scaffolding}
+\title{Create New Project Scaffolding}
+\description{
+Initializes a new R project structure with optional settings such as package setup, GitHub integration, CI, and testing.
+Useful for bootstrapping research or package development projects.
+}
 \usage{
 new_project(
   name,
@@ -19,41 +23,25 @@ new_project(
 )
 }
 \arguments{
-\item{name}{Character. Name of the new project. A new folder will be created with that name.}
-
-\item{path}{Character. Path where the new project should be created (default is the current working directory).}
-
-\item{package}{Logical. Create package structure or a simple project?}
-
-\item{github}{Logical. Create GitHub repository? Note this requires some working infrastructure like \code{git} and a \code{GITHUB_PAT}. See instructions here \url{https://usethis.r-lib.org/articles/articles/usethis-setup.html}.}
-
-\item{private.repo}{Logical. Default is TRUE.}
-
-\item{ci}{Logical. Use continuous integration in your GitHub repository? Current options are "none" (default), "travis" (uses Travis-CI), "circle" (uses Circle-CI), "appveyor" (uses AppVeyor), or "gh-actions" (uses GitHub Actions).}
-
-\item{makefile}{Logical. If TRUE, adds a template \code{makefile.R} file to the project.}
-
-\item{pipe}{Logical. Use magrittr's pipe in your package?}
-
-\item{testthat}{Logical. Add testthat infrastructure?}
-
-\item{verbose}{Print verbose output in the console while creating the new project? Default is FALSE.}
-
-\item{open.project}{Logical. If TRUE (the default) will open the newly created Rstudio project in a new session.}
-}
-\value{
-A new directory with R package structure, slightly modified.
-}
-\description{
-Create all the scaffolding for a new project in a new directory. The scaffolding includes a README file, different folders to hold raw data, analyses, etc, and optionally also \code{testthat} infrastructure. Also, optionally, set a private or public GitHub repo with continuous integration (Travis-CI, GitHub Actions...).
-}
-\details{
-If using github = TRUE, you will be asked if you want to commit some files. Reply positively to continue.
+  \item{name}{The name of the new project (required).}
+  \item{path}{Directory where the project should be created. Defaults to current working directory.}
+  \item{package}{Logical. Should the project be structured as an R package? Default is \code{TRUE}.}
+  \item{github}{Logical. Should a GitHub repository be initialized? Default is \code{FALSE}.}
+  \item{private.repo}{Logical. If creating a GitHub repository, should it be private? Default is \code{TRUE}.}
+  \item{ci}{Continuous integration tool to configure. Options: \code{"none"}, \code{"github"}, \code{"travis"}.}
+  \item{makefile}{Logical. Should a Makefile be included? Default is \code{TRUE}.}
+  \item{pipe}{Logical. Should the pipe operator (\code{\%>\%}) be activated (e.g., via \code{magrittr} or \code{tidyverse})?}
+  \item{testthat}{Logical. Should \code{testthat} structure be included for testing? Default is \code{FALSE}.}
+  \item{verbose}{Logical. Print progress messages? Default is \code{FALSE}.}
+  \item{open.project}{Logical. Open the new project in RStudio after creation? Default is \code{TRUE}.}
 }
 \examples{
-\dontrun{
-library("template")
-new_project("myproject")
-new_project("myproject", github = TRUE, private.repo = TRUE)
+new_project("covid19-analysis", github = TRUE, testthat = TRUE)
 }
+\seealso{
+\url{https://github.com/yagizemreozbilge/R-template.git}
 }
+\author{
+Yagiz Emre OZBILGE
+}
+
