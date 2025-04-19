@@ -7,6 +7,9 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(template)  # ← This should match your package name! (i.e., the "Package:" field in your DESCRIPTION file)
-test_check("template")
+
+# DO NOT use test_check() here
+# Instead, directly run the test files in the folder
+testthat::test_dir("tests/testthat")
+
 
