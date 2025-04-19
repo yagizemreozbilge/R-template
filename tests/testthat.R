@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(template)
-
+library(template)  # ← This should match your package name! (i.e., the "Package:" field in your DESCRIPTION file)
 test_check("template")
+
