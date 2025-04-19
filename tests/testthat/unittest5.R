@@ -1,5 +1,7 @@
 library(testthat)
 library(ggplot2)
+library(template)
+
 
 test_that("plot_total_cases_log() returns log-scale plot", {
   plot <- plot_total_cases_log(test_df)

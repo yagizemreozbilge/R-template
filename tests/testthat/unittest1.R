@@ -1,4 +1,5 @@
 # Load required libraries
+library(template)
 library(testthat)
 library(dplyr)
 library(ggplot2)

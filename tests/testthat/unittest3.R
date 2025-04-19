@@ -1,4 +1,5 @@
 library(testthat)
+library(template)
 
 test_that("filter_data() filters correctly by country and date", {
   filtered <- filter_data(test_df, countries = c("Turkey", "India"), start_date = "2021-01-02", end_date = "2021-01-03")

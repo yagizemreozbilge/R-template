@@ -1,3 +1,4 @@
+library(template)
 library(testthat)
 library(ggplot2)
 
