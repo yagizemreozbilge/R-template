@@ -1,3 +1,4 @@
+library(template)
 covid_dataset <- data.frame(
   date = as.Date(c("2021-01-01", "2021-01-02", "2021-01-03")),
   location = c("Turkey", "Turkey", "Germany"),

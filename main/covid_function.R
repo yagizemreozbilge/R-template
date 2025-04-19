@@ -1,3 +1,4 @@
+library(template)
 # ------------------------------
 # 1. Calculate Case Fatality Rate (CFR)
 # ------------------------------

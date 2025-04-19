@@ -1,3 +1,4 @@
+library(template)
 #' Create new project scaffolding
 #'
 #' Create all the scaffolding for a new project in a new directory. The scaffolding includes
