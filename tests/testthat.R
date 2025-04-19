@@ -8,8 +8,9 @@
 
 library(testthat)
 
-# DO NOT use test_check() here
-# Instead, directly run the test files in the folder
+# Do NOT use test_check() anymore
+# This works directly and bypasses the need for installed package test structure
 testthat::test_dir("tests/testthat")
+
 
 
